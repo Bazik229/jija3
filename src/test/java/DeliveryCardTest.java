@@ -15,7 +15,7 @@ public class DeliveryCardTest {
 
     @Test
     void shouldDeliveryCard(){
-        Configuration.holdBrowserOpen = true;
+//        Configuration.holdBrowserOpen = true;
         open("http://localhost:9999/");
 
         ElementsCollection inputs = $$(byClassName("input__control"));
