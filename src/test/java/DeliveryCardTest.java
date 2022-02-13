@@ -27,6 +27,6 @@ public class DeliveryCardTest {
         $(byClassName("checkbox__box")).click();
         $(byClassName("button__content")).click();
 
-        $(byClassName("notification__title")).shouldBe(visible).shouldHave(text("Успешно!"), Duration.ofSeconds(14));
+        $(byClassName("notification__title")).shouldBe(visible, Duration.ofSeconds(14)).shouldHave(text("Успешно!"));
     }
 }
