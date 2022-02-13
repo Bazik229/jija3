@@ -1,6 +1,7 @@
 import com.codeborne.selenide.Configuration;
 
 import com.codeborne.selenide.ElementsCollection;
+import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.Test;
 
 import java.time.Duration;
@@ -16,7 +17,7 @@ public class DeliveryCardTest {
     @Test
     void shouldDeliveryCard(){
 //        Configuration.holdBrowserOpen = true;
-        open("http://localhost:9999/");
+        open("http://localhost:9999");
 
         ElementsCollection inputs = $$(byClassName("input__control"));
         inputs.get(0).val("Самара");
