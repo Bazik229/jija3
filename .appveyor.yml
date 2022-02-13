@@ -16,4 +16,5 @@ install:
 
 build_script:
   - ./gradlew test --info & # запускаем тест, флаг --info позволяет выводить больше информации
-  - ./gradlew test -Dselenide.headless=true # Включение headless режима при использовании selenium
+  - ./gradlew test -Dselenide.headless=true &
+  -sleep 10 # спим
